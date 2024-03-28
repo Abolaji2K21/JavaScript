@@ -14,8 +14,10 @@ function higherOrderFunction(func){
     func();
 }
 
-function lowerOrderFunction(){
-    console.log("lower function")
-}
+// function lowerOrderFunction(){
+//     console.log("lower function")
+// }
 
-higherOrderFunction(lowerOrderFunction);
+higherOrderFunction(function lowerOrderFunction(){
+    console.log("lower function")
+});
