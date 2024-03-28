@@ -9,15 +9,36 @@
 // }
 
 
-function higherOrderFunction(func){
-    console.log("higher function")
-    func();
-}
-
-// function lowerOrderFunction(){
-//     console.log("lower function")
+// function higherOrderFunction(func){
+//     console.log("higher function")
+//     func();
 // }
 
-higherOrderFunction(function lowerOrderFunction(){
-    console.log("lower function")
-});
+// // function lowerOrderFunction(){
+// //     console.log("lower function")
+// // }
+
+// higherOrderFunction(function lowerOrderFunction(){
+//     console.log("lower function")
+// });
+
+// function higherOrderFunction(func){
+//     console.log("higher function")
+//     func();
+// }
+
+// // function lowerOrderFunction(){
+// //     console.log("lower function")
+// // }
+// higherOrderFunction(() =>{
+//     console.log("lower function")
+// });
+
+
+function greetings(greet){
+    return function person(name){
+        return `Hello, ${name}. ${greet}`;
+    }
+}
+
+console.log(greetings("Good morning!")("John"));
