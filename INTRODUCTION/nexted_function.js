@@ -11,6 +11,7 @@
 
 function higherOrderFunction(func){
     console.log("higher function")
+    func();
 }
 
 function lowerOrderFunction(){
