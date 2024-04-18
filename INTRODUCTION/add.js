@@ -5,4 +5,10 @@ function addNumbers(x,y){
 
 addNumbers(5,7)
 
-module.exports = addNumbers;
+
+function evenNumber(numbers){
+    return numbers.filter(number => number % 2 == 0)
+
+}
+
+module.exports = {addNumbers, evenNumber}
