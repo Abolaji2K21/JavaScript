@@ -35,4 +35,13 @@ function tictacktoe(row, column, elements) {
     return array;
 }
 
-module.exports = {addNumbers, evenNumber, mapGrade, tictacktoe}
+
+function mapLowestCommonFactor(number){
+    for(let count = 2; count <= 9 ; count++){
+        if(number.every(num => num % count === 0))
+        return count
+    }
+
+}
+
+module.exports = {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor, tictacktoe}

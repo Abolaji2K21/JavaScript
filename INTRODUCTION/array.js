@@ -92,19 +92,19 @@
 // //     }
 // // }
 
-// let numberOne = [2,9,8];
-// for (let divisor = 2; divisor <= 9; divisor++) {
-//     let isDivisible = true;
-//     for (let count = 0; count < numberOne.length; count++) {
-//         if (numberOne[count] % divisor !== 0) {
-//             isDivisible = false;
-//             break; 
-//         }
-//     }
-//     if (isDivisible === true) {
-//         console.log(divisor);
-//     } 
-// }
+let numberOne = [2,9,8];
+for (let divisor = 2; divisor <= 9; divisor++) {
+    let isDivisible = true;
+    for (let count = 0; count < numberOne.length; count++) {
+        if (numberOne[count] % divisor !== 0) {
+            isDivisible = false;
+            break; 
+        }
+    }
+    if (isDivisible === true) {
+        console.log(divisor);
+    } 
+}
 
 let array = [1,3,4,5,6]
 let arry = []

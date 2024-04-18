@@ -1,4 +1,4 @@
-let {addNumbers, evenNumber, mapGrade, tictacktoe} = require("./add.js");
+let {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor ,tictacktoe} = require("./add.js");
 // let addNumbers = require("./add.js")
 
 
@@ -30,6 +30,17 @@ test ("Map The Grades", ()=>{
     expect(answer).toEqual([NaN, "B", "F", "D", "F"])
 })
 
+
+test ("Lowest Common Factor", ()=>{
+    let myArray = [14,21]
+     
+    let answer = mapLowestCommonFactor(myArray)
+
+    expect(answer).toBe(7)
+
+
+})
+
 test("Generate tic-tac-toe board from elements", () => {
     let elements = [
         { row: 0, column: 0, value: "X" },
@@ -53,4 +64,5 @@ test("Generate tic-tac-toe board from elements", () => {
 
     expect(result).toEqual(expectedBoard);
 });
+
 
