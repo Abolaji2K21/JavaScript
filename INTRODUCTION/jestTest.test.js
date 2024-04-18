@@ -1,4 +1,4 @@
-let {addNumbers, evenNumber} = require("./add.js");
+let {addNumbers, evenNumber, mapGrade} = require("./add.js");
 // let addNumbers = require("./add.js")
 
 
@@ -21,3 +21,13 @@ test("Filter even number ", () => {
   
 
 })
+
+test ("Map The Grades", ()=>{
+    let grade = [-1, 85, 49, 69, 59]
+
+    let answer = mapGrade(grade)
+
+    expect(answer).toEqual([NaN, "B", "F", "D", "F"])
+})
+
+test("Map the lenghtgit")
