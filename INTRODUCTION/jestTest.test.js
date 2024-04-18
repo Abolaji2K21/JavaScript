@@ -1,4 +1,4 @@
-let {addNumbers, evenNumber, mapGrade} = require("./add.js");
+let {addNumbers, evenNumber, mapGrade, tictacktoe} = require("./add.js");
 // let addNumbers = require("./add.js")
 
 
@@ -30,4 +30,27 @@ test ("Map The Grades", ()=>{
     expect(answer).toEqual([NaN, "B", "F", "D", "F"])
 })
 
-test("Map the lenghtgit")
+test("Generate tic-tac-toe board from elements", () => {
+    let elements = [
+        { row: 0, column: 0, value: "X" },
+        { row: 0, column: 1, value: "X" },
+        { row: 0, column: 2, value: "O" },
+        { row: 1, column: 0, value: "O" },
+        { row: 1, column: 1, value: " " },
+        { row: 1, column: 2, value: "X" },
+        { row: 2, column: 0, value: "X" },
+        { row: 2, column: 1, value: "O" },
+        { row: 2, column: 2, value: "O" },
+    ];
+
+    let expectedBoard = [
+        ["X", "X", "O"],
+        ["O", " ", "X"],
+        ["X", "O", "O"]
+    ];
+
+    let result = tictacktoe(3, 3, elements);
+
+    expect(result).toEqual(expectedBoard);
+});
+

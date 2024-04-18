@@ -25,4 +25,14 @@ function mapGrade(numbers){
     
     });
 }
-module.exports = {addNumbers, evenNumber, mapGrade}
+
+function tictacktoe(row, column, elements) {
+    let array = new Array(row).fill(null).map(() => new Array(column).fill(null));
+    elements.forEach(element => {
+        let { row: rowIdx, column: colIdx, value } = element;
+        array[rowIdx][colIdx] = value;
+    });
+    return array;
+}
+
+module.exports = {addNumbers, evenNumber, mapGrade, tictacktoe}
