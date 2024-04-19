@@ -44,4 +44,49 @@ function mapLowestCommonFactor(number){
 
 }
 
-module.exports = {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor, tictacktoe}
+
+function mapMaximumProduct(array){
+    let maximumPdt = array[0];
+
+    if (array.length == 1 || array.length == 0) {
+        return 0;
+
+    } else 
+    
+    if (array.length > 2){
+        for (let count = 0; count < array.length - 1; count++) {
+            for (let check = count + 1; check < array.length; check++) {
+                if (array[count] * array[check] >= maximumPdt) {
+                    maximumPdt = array[count] * array[check];
+                }
+            }
+        }
+    } else 
+    
+    if (array.length == 2){
+        return  array[0] * array[1];
+
+    }
+    return maximumPdt;
+
+}
+
+// function mapMaximumProductRetry(array) {
+//     if (array.length <= 1) {
+//         return 0;
+//     }
+
+//     let maximumPdt = array[0] * array[1];
+//     for (let count = 0; count < array.length - 1; count++) {
+//         for (let countOne = count + 1; countOne < array.length; countOne++) {
+//             maximumPdt = Math.max(maximumPdt, array[count] * array[countOne]);
+//         }
+//     }
+
+//     return maximumPdt;
+// }
+
+
+
+
+module.exports = {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor, tictacktoe,mapMaximumProduct}
