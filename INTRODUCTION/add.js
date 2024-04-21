@@ -45,6 +45,7 @@ function mapLowestCommonFactor(number){
 }
 
 
+
 function mapMaximumProduct(array){
     let maximumPdt = array[0];
 
@@ -71,22 +72,26 @@ function mapMaximumProduct(array){
 
 }
 
-// function mapMaximumProductRetry(array) {
-//     if (array.length <= 1) {
-//         return 0;
-//     }
+function mapMaximumProductRetry(array) {
+    let maximumPdt = array[0] * array[1];
 
-//     let maximumPdt = array[0] * array[1];
-//     for (let count = 0; count < array.length - 1; count++) {
-//         for (let countOne = count + 1; countOne < array.length; countOne++) {
-//             maximumPdt = Math.max(maximumPdt, array[count] * array[countOne]);
-//         }
-//     }
+    if (array.length <= 1) {
+        return 0;
+    }
 
-//     return maximumPdt;
-// }
+    if (array.length == 2){
 
+        return array[0] * array[1];
 
+    }
 
+    for (let count = 0; count < array.length - 1; count++) {
+        for (let countOne = count + 1; countOne < array.length; countOne++) {
+            maximumPdt = Math.max(maximumPdt, array[count] * array[countOne]);
+        }
+    }
 
-module.exports = {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor, tictacktoe,mapMaximumProduct}
+    return maximumPdt;
+}
+
+module.exports = {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor, tictacktoe, mapMaximumProduct, mapMaximumProductRetry}

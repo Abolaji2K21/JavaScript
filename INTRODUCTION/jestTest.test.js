@@ -1,4 +1,4 @@
-let {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor ,tictacktoe, mapMaximumProduct} = require("./add.js");
+let {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor ,tictacktoe, mapMaximumProduct, mapMaximumProductRetry} = require("./add.js");
 // let addNumbers = require("./add.js")
 
 
@@ -68,9 +68,9 @@ test("Generate tic-tac-toe board from elements", () => {
 test("MaximumProduct", ()=>{
     let myArray = [-2, 2]
      
-    let answer = mapMaximumProduct(myArray)
+    let answer = mapMaximumProductRetry(myArray)
 
-    expect(answer).toBe()
+    expect(answer).toBe(4)
 
 })
 
