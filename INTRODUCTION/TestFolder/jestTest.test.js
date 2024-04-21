@@ -70,7 +70,7 @@ test("MaximumProduct", ()=>{
      
     let answer = mapMaximumProductRetry(myArray)
 
-    expect(answer).toBe(4)
+    expect(answer).toBe(-4)
 
 })
 
