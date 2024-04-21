@@ -1,7 +1,7 @@
 let {AirCondition} = require('./airCondition.js'); 
 
 describe('AirCondition', () => {
-    let myAircondition;
+    let Aircondition;
 
     beforeEach(() => {
         myAircondition = new AirCondition();
@@ -83,4 +83,11 @@ describe('AirCondition', () => {
         myAircondition.setAcOff(true);
         expect(myAircondition.getAcOff()).toBeTruthy();
     });
+
+    test('Set temperature with invalid parameter', () => {
+        myAircondition.setTemperature('invalid');
+        expect(myAircondition.getTemperature()).toBe(16);
+    });
+
+
 });
