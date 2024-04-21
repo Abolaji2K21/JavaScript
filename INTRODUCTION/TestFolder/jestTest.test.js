@@ -1,4 +1,4 @@
-let {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor ,tictacktoe, mapMaximumProduct, mapMaximumProductRetry} = require("./add.js");
+let {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor ,tictacktoe, mapMaximumProduct, mapMaximumProductRetry} = require("../add.js");
 // let addNumbers = require("./add.js")
 
 
