@@ -93,5 +93,9 @@ function mapMaximumProductRetry(array) {
 
     return maximumPdt;
 }
+function mapNumberGreaterThanSeventy(array){
+    return array.filter(num => num >= 70).map(num => num * 1)
+}
+
 
 module.exports = {addNumbers, evenNumber, mapGrade, mapLowestCommonFactor, tictacktoe, mapMaximumProduct, mapMaximumProductRetry}

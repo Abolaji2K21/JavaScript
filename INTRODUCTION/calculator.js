@@ -29,6 +29,6 @@ switch(operator){
     case "/" :     console.log(left_operand / right_operand)
         break
 
-    default:      console.log(NaN)
+    default:      console.log(NaN)                                                                                                                                            
 
 }

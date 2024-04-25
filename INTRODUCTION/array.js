@@ -1,16 +1,18 @@
-// let number = [1,2,3,4,5,6,7]
+let number = [1,2,3,4,5,6,7]
 
-// number.pop()
+number.pop()
+console.log(number)
+
+number.push(8)
+console.log(number)
+
+
 // console.log(number)
 
-// number.push(8)
-
-// console.log(number)
-
-// number.shift()
-// console.log(number)
-// number.unshift(18)
-// console.log(number)
+number.shift()
+console.log(number)
+number.unshift(18)
+console.log(number)
 
 
 // console.log(number.slice(1,3,2))
@@ -114,4 +116,10 @@ let arry = []
 // let ans = array.map((num)=> num % 2 == 1)
 let ans = array.filter(num => num % 2 ==0).map(num => num * 10)
 console.log(ans)
+
+let arrayOne = [1,1,2,2,2]
+let arrayAgain = []
+
+let ansOne = array.forEach((num)=> {arry.push ((num * 2))})
+
 

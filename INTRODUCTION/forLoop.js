@@ -72,6 +72,7 @@
 // let myObjFive = {
 
 //     name: "praise",
+
 //     population: 72000,
 //     temp: 10,
 //     currency:    "$230",
@@ -109,7 +110,8 @@
 // let myObjNine = {
 
 //     name: "Victor",
-//     population: 35000,
+//     population:hyrium
+ 35000,
 //     temp: 4,
 //     currency:    "$50",
 // }
@@ -132,5 +134,7 @@
 // }
 
 // console.log(addedCalculation)
+
+
 
 
