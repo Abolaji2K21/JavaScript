@@ -1,26 +1,27 @@
-let {Shape} = require('./Shape.js'); 
+let { Shape } = require('./Shape.js');
 
 class Rectangle extends Shape {
-    constructor(name, sideOne, sideTwo){
+    constructor(name, sideOne, sideTwo) {
         super(name);
         this.sideOne = sideOne;
         this.sideTwo = sideTwo;
-
-     
-         }
     }
-    getArea(){
+
+    getArea() {
         return this.sideOne * this.sideTwo;
     }
 
-    isSquare(sideOne, sideTwo){
-        if(sideOne === sideTwo){
-            return true;
-        } else {
-            return false;
-        }
+    isSquare(sideOne, sideTwo) {
+        return sideOne === sideTwo;
     }
 
+    setName(shapeName) {
+        this.__name = shapeName;
+    }
+
+    getName() {
+        return this.__name; 
+    }
 }
 
-module.exports = {Rectangle};
+module.exports = { Rectangle };

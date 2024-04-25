@@ -1,15 +1,15 @@
-class Shape{
-    constructor(name){
-        this.name = name;
+class Shape {
+    constructor(name) {
+        this.__name = name;
     }
 
-    setName(shapeName){
-        this.name = shapeName;
+    setName(shapeName) {
+        this.__name = shapeName;
     }
 
-    getName(){
-        return this.name; 
+    getName() {
+        return this.__name; 
     }
 } 
 
-module.exports = {Shape};
+module.exports = { Shape };
