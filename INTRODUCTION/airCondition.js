@@ -5,7 +5,8 @@ class AirCondition {
         this.temperature = 16;
     }
 
-    getAcOff() {
+    
+getAcOff() {
         return this.acOff;
     }
 

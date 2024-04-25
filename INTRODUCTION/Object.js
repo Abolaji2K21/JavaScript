@@ -73,3 +73,10 @@ const PersonTwo = new Person("Dayo", 45, "Female")
 console.log(PersonTwo.name)
 console.log(PersonTwo.age)
 console.log(PersonTwo.sex)
+
+
+const json = '{"result" : true, "count" : 42}'
+const obj = JSON.parse(json)
+console.log(obj.count)
+
+console.log(obj.result)
